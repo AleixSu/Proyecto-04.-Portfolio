@@ -1,0 +1,101 @@
+.aboutMeInfo {
+  margin-left: 50%;
+  padding-right: 15%;
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  color: black;
+  height: 100vh;
+  background-color: var(--colour-main-3);
+  position: absolute;
+  margin-top: 100vh;
+}
+
+#aboutMeInfo > h2 {
+  color: var(--colour-main-1);
+  padding-top: 100px;
+  font-family: var(--subtitle-font);
+  font-size: 35px;
+}
+
+#aboutMeP {
+  color: var(--colour-main-1);
+  font-family: var(--text-font);
+  font-weight: 600;
+  font-size: 19px;
+}
+
+.infoTitle {
+  color: var(--colour-main-1);
+  font-family: var(--subtitle-font);
+  font-size: 18px;
+}
+
+.infoP {
+  color: var(--colour-main-1);
+  font-family: var(--text-font);
+  font-size: 13px;
+  filter: brightness(300%);
+}
+
+.fixedAM {
+  margin-left: 50%;
+  padding-right: 15%;
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  color: black;
+  height: 100vh;
+  background-color: var(--colour-main-3);
+  position: fixed;
+}
+
+/* ---------MEDIAS--------- */
+
+@media (max-width: 1024px) {
+  .aboutMeInfo {
+    margin-left: 0%;
+    padding-right: 35%;
+    padding-left: 5%;
+    gap: 60px;
+  }
+
+  .fixedAM {
+    margin-left: 0%;
+    padding-right: 35%;
+    padding-left: 5%;
+    gap: 60px;
+  }
+}
+
+@media (max-width: 450px) {
+  .aboutMeInfo {
+    margin-left: 0%;
+    padding-right: 25%;
+    padding-left: 5%;
+    gap: 40px;
+  }
+  .fixedAM {
+    margin-left: 0%;
+    padding-right: 25%;
+    padding-left: 5%;
+    gap: 40px;
+  }
+  #aboutMeInfo > h2 {
+    font-size: 25px;
+  }
+
+  #aboutMeP {
+    font-size: 12px;
+  }
+
+  .infoTitle {
+    font-size: 12px;
+  }
+
+  .infoP {
+    font-size: 10px;
+  }
+}

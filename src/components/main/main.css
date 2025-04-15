@@ -1,0 +1,242 @@
+#main {
+  width: 100%;
+  position: fixed;
+}
+
+#mainInfo {
+  z-index: 3;
+  background-color: var(--colour-main-2);
+}
+#h1Div {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--colour-main-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  animation: retractWidth 0.8s 0.4s ease-in-out forwards;
+}
+
+@keyframes retractWidth {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+#info {
+  height: auto;
+  width: 80%;
+  color: var(--colour-main-2);
+}
+
+#languageSwitcherDiv {
+  position: absolute;
+  display: flex;
+  top: 10px;
+}
+.worldImg {
+  width: 25px;
+  background-color: var(--colour-main-2);
+  border: 1px solid var(--colour-main-2);
+  border-radius: 500px;
+}
+
+#info > h1 {
+  font-family: var(--title-font);
+  font-size: 4.4rem;
+  opacity: 0;
+  animation: infoAppearance 0.5s 1s ease-in-out forwards;
+}
+#info > h3 {
+  position: relative;
+  top: -30px;
+  font-family: var(--subtitle-font);
+  font-size: 1.2rem;
+  opacity: 0;
+  animation: infoAppearance 0.5s 1s ease-in-out forwards;
+}
+#info > p {
+  font-family: var(--text-font);
+  text-align: justify;
+  width: 80%;
+  opacity: 0;
+  animation: infoAppearance 0.5s 1.2s ease-in-out forwards;
+}
+
+#info > div {
+  margin-top: 30px;
+  opacity: 0;
+  animation: infoAppearance 0.5s 1.4s ease-in-out forwards;
+}
+
+#buttonContact > a {
+  text-decoration: none;
+  display: flex;
+  height: 50px;
+  width: 15%;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes infoAppearance {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#ImgDiv {
+  width: 40%;
+  height: 100vh;
+  background-color: var(--colour-main-2);
+}
+
+.backgroundPhoto {
+  height: 1020px;
+  filter: saturate(0.03) blur(3px);
+}
+
+#filterDiv {
+  position: relative;
+  left: 150%;
+  top: -100%;
+}
+#filterDiv:after {
+  position: absolute;
+  content: '';
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--colour-main-2);
+  mix-blend-mode: multiply;
+}
+
+#profileIMG {
+  width: 27vw;
+  position: absolute;
+  z-index: 1;
+  right: 20vw;
+  top: 5%;
+  opacity: 0;
+  animation: profileIMGOpacity 0.8s 1.4s ease-in-out forwards;
+}
+
+@keyframes profileIMGOpacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#decoDiv {
+  position: absolute;
+  width: 5000px;
+  height: 800px;
+  background-color: var(--colour-faded-1);
+  z-index: 2;
+  animation: decoAni 0.8s 0.1s ease-in-out forwards;
+}
+
+@keyframes decoAni {
+  from {
+    transform: translateY(1000px) rotate(0deg);
+    top: 2000px;
+  }
+  to {
+    transform: translateY(0px) rotate(-11.3deg);
+    top: 458px;
+  }
+}
+
+/* ---------MEDIAS--------- */
+
+@media (max-width: 1024px) and (max-device-width: 1366px) {
+  @keyframes retractWidth {
+    from {
+      width: 100%;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  #info {
+    height: auto;
+    margin-top: 300px;
+    width: 80%;
+    color: var(--colour-main-2);
+  }
+  #profileIMG {
+    width: 35vw;
+    right: 10vw;
+    top: 3%;
+  }
+
+  #decoDiv {
+    left: -200px;
+    width: 7000px;
+  }
+}
+
+@media (max-width: 1000px) {
+  @keyframes retractWidth {
+    from {
+      width: 100%;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  #info {
+    height: auto;
+    margin-top: 400px;
+    width: 80%;
+    color: var(--colour-main-2);
+  }
+  #profileIMG {
+    width: 30vw;
+    right: 10vw;
+    top: 2%;
+  }
+
+  #decoDiv {
+    left: -200px;
+    width: 7000px;
+  }
+}
+@media (max-width: 450px) {
+  #info > h1 {
+    font-size: 2rem;
+  }
+  #info > h3 {
+    top: -10px;
+    font-family: var(--subtitle-font);
+  }
+  #info > p {
+    text-align: justify;
+    width: 100%;
+  }
+  #buttonContact {
+    width: 300%;
+  }
+  #decoDiv {
+    position: absolute;
+    width: 4900px;
+    height: 1000px;
+    background-color: var(--colour-faded-1);
+    z-index: 2;
+    animation: decoAni 0.8s 0.1s ease-in-out forwards;
+  }
+}

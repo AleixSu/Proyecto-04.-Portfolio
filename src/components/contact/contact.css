@@ -1,0 +1,191 @@
+.contactMeContent {
+  margin-left: 50%;
+  padding-right: 15%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  height: 100vh;
+  background-color: var(--colour-main-2);
+  position: absolute;
+  margin-top: 570vh;
+}
+
+.contactMeDiv {
+  width: 60%;
+  padding-left: 10%;
+}
+#contactMeInfoDiv > h4 {
+  font-family: var(--subtitle-font);
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+#contactMeInfoDiv > p {
+  font-family: var(--text-font);
+}
+
+.contactMeTitle {
+  color: var(--colour-main-1);
+  padding-top: 100px;
+  font-family: var(--subtitle-font);
+  font-size: 35px;
+  margin-bottom: 80px;
+}
+
+#contactMeInfoDiv {
+  margin-bottom: 80px;
+}
+
+#contactMeForm {
+  width: 100%;
+}
+
+.inputPackDiv {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.inputDiv {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  font-family: var(--text-font);
+}
+
+.inputDiv > label {
+  font-size: 12px;
+}
+
+.inputDiv > input {
+  height: 60px;
+  margin-bottom: 40px;
+  font-size: 18px;
+  border: none;
+  border-bottom: 1px solid var(--colour-main-1);
+  background-color: var(--colour-main-2);
+}
+
+.inputMessageDiv {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  font-family: var(--text-font);
+  overflow-y: auto;
+}
+
+.inputMessageDiv > label {
+  font-size: 12px;
+}
+
+.inputMessageDiv > textarea {
+  height: 120px;
+  margin-bottom: 40px;
+  padding-top: 20px;
+  font-size: 18px;
+  border: none;
+  border-bottom: 1px solid var(--colour-main-1);
+  background-color: var(--colour-main-2);
+  font-family: var(--text-font);
+}
+
+.inputMessageDiv > textarea::placeholder {
+  font-family: var(--text-font);
+  font-size: 18px;
+  font-weight: 360;
+  letter-spacing: -01px;
+}
+
+.fixedCM {
+  margin-left: 50%;
+  width: 60%;
+  padding-right: 15%;
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  color: var(--colour-main-1);
+  height: 100vh;
+  background-color: var(--colour-main-3);
+  position: fixed;
+}
+
+#sendMessageButton > button {
+  margin-top: 50px;
+  height: 60px;
+  width: 35%;
+  font-size: 18px;
+}
+
+/* ---------MEDIAS--------- */
+
+@media (max-width: 1024px) {
+  .contactMeContent {
+    margin-left: 0%;
+    width: 100%;
+    padding-right: 35%;
+    padding-left: 5%;
+    gap: 60px;
+  }
+  .contactMeDiv {
+    width: 60%;
+    padding-left: 5%;
+  }
+}
+@media (max-width: 450px) {
+  .contactMeDiv {
+    width: 80%;
+    padding-left: 5%;
+  }
+  #contactMeInfoDiv {
+    margin-bottom: 40px6;
+  }
+
+  #contactMeInfoDiv > h4 {
+    font-size: 15px;
+  }
+  .contactMeTitle {
+    font-size: 25px;
+  }
+  #contactMeInfoDiv > p {
+    font-size: 12px;
+  }
+  .inputPackDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #contactMeForm {
+    width: 100%;
+  }
+
+  .inputDiv > label {
+    font-size: 8px;
+  }
+
+  .inputDiv > input {
+    height: 40px;
+    margin-bottom: 20px;
+    font-size: 13px;
+  }
+
+  .inputMessageDiv > label {
+    font-size: 8px;
+  }
+
+  .inputMessageDiv > textarea {
+    height: 80px;
+  }
+
+  .inputMessageDiv > textarea::placeholder {
+    font-size: 13px;
+  }
+
+  #sendMessageButton > button {
+    margin-top: 30px;
+    height: 40px;
+    width: 60%;
+    font-size: 13px;
+  }
+}

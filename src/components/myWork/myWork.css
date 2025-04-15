@@ -1,0 +1,175 @@
+.myWorkContent {
+  margin-left: 50%;
+  padding-right: 15%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  height: 100vh;
+  background-color: var(--colour-main-3);
+  position: absolute;
+  margin-top: 400vh;
+}
+
+.myWorkDiv {
+  width: 90%;
+}
+
+.myWorkTitle {
+  color: var(--colour-main-1);
+  padding-top: 100px;
+  font-family: var(--subtitle-font);
+  font-size: 35px;
+  margin-bottom: 45px;
+  padding-left: 10%;
+}
+
+.fixedMW {
+  margin-left: 50%;
+  padding-right: 15%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  height: 100vh;
+  background-color: var(--colour-main-3);
+  position: fixed;
+}
+
+#cardDiv {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  padding-top: 30px;
+  justify-content: center;
+}
+
+.projectCardDiv {
+  width: 40%;
+}
+
+.projectCard {
+  width: 100%;
+  height: auto;
+  background-color: rgb(240, 240, 240);
+  filter: brightness(0.98);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.1s ease-in-out;
+}
+
+.projectCard:hover {
+  transform: scale(1.05);
+  -webkit-box-shadow: 4px 6px 5px 0px rgb(239, 239, 239);
+  -moz-box-shadow: 4px 6px 5px 0px rgba(239, 239, 239, 1);
+  box-shadow: 4px 6px 5px 0px rgba(239, 239, 239, 1);
+}
+
+.projectCard > video {
+  margin: 10px 0px 10px 0px;
+  width: 80%;
+  height: 200px;
+  border-radius: 10px;
+  filter: brightness(1.3);
+}
+.projectTag {
+  background-color: var(--colour-main-3);
+  width: 90%;
+  height: 30px;
+  filter: brightness(1.3);
+  padding: 10px 5%;
+}
+
+.projectCard > h4 {
+  font-family: var(--subtitle-font);
+  font-size: 18px;
+}
+
+.projectCard > a {
+  font-family: var(--text-font);
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: rgb(126, 126, 126);
+  text-decoration: none;
+}
+
+.projectCard > a:hover {
+  color: var(--colour-main-1);
+}
+
+.projectCardDiv:nth-child(1) {
+  transition-delay: 200ms;
+}
+
+.projectCardDiv:nth-child(2) {
+  transition-delay: 400ms;
+}
+
+.projectCardDiv:nth-child(3) {
+  transition-delay: 200ms;
+}
+.projectCardDiv:nth-child(4) {
+  transition-delay: 400ms;
+}
+
+/* ---------MEDIAS--------- */
+
+@media (max-width: 1024px) {
+  .myWorkContent {
+    width: 100%;
+    margin-left: 0%;
+    padding-right: 0%;
+    padding-left: 0%;
+    gap: 60px;
+  }
+
+  .fixedMW {
+    width: 100%;
+    margin-left: 0%;
+    padding-right: 0%;
+    padding-left: 0%;
+    gap: 60px;
+  }
+
+  .myWorkDiv {
+    width: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  #cardDiv {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    padding-top: 30px;
+    justify-content: center;
+  }
+}
+@media (max-width: 450px) {
+  .myWorkTitle {
+    font-size: 25px;
+  }
+
+  .projectCard {
+    height: 20vh;
+  }
+  .projectTag {
+    background-color: var(--colour-main-3);
+    width: 90%;
+    height: 30px;
+    filter: brightness(1.3);
+    padding: 10px 5%;
+  }
+
+  .projectCard > h4 {
+    font-size: 12px;
+  }
+
+  .projectCard > a {
+    font-size: 8px;
+  }
+}
