@@ -66,6 +66,10 @@
   border-bottom: 1px solid var(--colour-main-1);
   background-color: var(--colour-main-2);
 }
+.inputDiv > input::placeholder {
+  color: var(--colour-main-2);
+  filter: brightness(0.8);
+}
 
 .inputMessageDiv {
   display: flex;
@@ -95,6 +99,8 @@
   font-size: 18px;
   font-weight: 360;
   letter-spacing: -01px;
+  color: var(--colour-main-2);
+  filter: brightness(0.8);
 }
 
 .fixedCM {

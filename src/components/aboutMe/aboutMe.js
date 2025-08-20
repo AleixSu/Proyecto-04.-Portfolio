@@ -1,19 +1,21 @@
+import { textAndTitles } from '../data/portfolioTextAndTitles'
 import { profileInfo } from '../data/profileInfo'
 import { currentLanguage } from '../functions/functions'
 import './aboutMe.css'
 
 export const aboutMeCreator = (elementoPadre) => {
   const aboutMeInfo = profileInfo[currentLanguage]
+  const tAndTAboutMe = textAndTitles[currentLanguage]
   const mainHTML = `
             <section id="aboutMeInfo" class="aboutMeInfo">
-                <h2> About me</h2>
+                <h2>${tAndTAboutMe.aboutMeH2}</h2>
                 <p id="aboutMeP">${aboutMeInfo.userAboutMe}</p>
                 <article class="infoDiv">
-                    <h3 class="infoTitle">Technical</h3>
+                    <h3 class="infoTitle">${tAndTAboutMe.aboutMeH3T}</h3>
                     <p class="infoP">${aboutMeInfo.userTechnical}</p>
                 </article>
                 <article class="infoDiv">
-                    <h3 class="infoTitle">Personal</h3>
+                    <h3 class="infoTitle">${tAndTAboutMe.aboutMeH3P}</h3>
                     <p class="infoP">${aboutMeInfo.userPersonal}</p>
                 </article>
             </section>

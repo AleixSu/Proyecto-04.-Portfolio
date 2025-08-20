@@ -1,10 +1,10 @@
-import { renderApp } from './components/functions/functions'
+import { renderApp, setLanguage } from './components/functions/functions'
 import './style.css'
 
 renderApp()
 
-/* document.addEventListener('DOMContentLoaded', () => { */
-/*   const buttonEN = document.getElementById('buttonEN')
+/* document.addEventListener('DOMContentLoaded', () => {
+  const buttonEN = document.getElementById('buttonEN')
   buttonEN.addEventListener('click', () => {
     setLanguage('EN')
     renderApp()

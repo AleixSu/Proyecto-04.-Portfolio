@@ -1,30 +1,34 @@
 import { createButton } from '../buttons/button'
+import { textAndTitles } from '../data/portfolioTextAndTitles'
+import { currentLanguage } from '../functions/functions'
 import './contact.css'
 
 export const contactMeCreator = (elementoPadre) => {
+  const tAndTContactMe = textAndTitles[currentLanguage]
+
   const mainHTML = `
         <section id="contactMeContent" class="contactMeContent">
             <div class="contactMeDiv">
-                <h2 class="contactMeTitle">Contact me</h2>
+                <h2 class="contactMeTitle">${tAndTContactMe.contactMeH2}</h2>
                 <article id="contactMeInfoDiv">
-                  <h4> Do you want to work together?</h4>
-                   <p> Got an idea or project in mind that you'd like to bring to life? Feel free to reach out! I'd be happy to help shape it into something practical, appealing, and tailor-made.</p>
+                  <h4>${tAndTContactMe.contactMeH4}</h4>
+                   <p>${tAndTContactMe.contactMeText}</p>
                 </article>
                 <article id="contactMeForm">
                     <form>
                         <div class="inputPackDiv">
                             <div class="inputDiv">
-                              <label for="name">Your name</label>
-                              <input placeholder="Enter your name"></input>
+                              <label for="name">${tAndTContactMe.contactMeLabelN}</label>
+                              <input placeholder="${tAndTContactMe.contactMePH1}"></input>
                             </div>
                             <div class="inputDiv">
-                              <label for="email">Email address</label>
-                              <input placeholder="Enter your email address"></input>
+                              <label for="email">${tAndTContactMe.contactMeLabelE}</label>
+                              <input placeholder="${tAndTContactMe.contactMePH2}"></input>
                             </div>
                         </div>
                            <div class="inputMessageDiv">
-                              <label for="yourMessage">Your message</label>
-                              <textarea placeholder="Hi!! So.. I have this idea and I think your are the best for this job. Let's discuss it."></textarea>
+                              <label for="yourMessage">${tAndTContactMe.contactMeLabelM}</label>
+                              <textarea placeholder="${tAndTContactMe.contactMePH3}"></textarea>
                            </div>
                         <div id="sendMessageButton">
                         </div>
@@ -38,6 +42,11 @@ export const contactMeCreator = (elementoPadre) => {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  const tAndTContactMe = textAndTitles[currentLanguage]
   const sendButtonDiv = document.getElementById('sendMessageButton')
-  createButton(sendButtonDiv, "Let's Do It!", 'contactButtonLight')
+  createButton(
+    sendButtonDiv,
+    tAndTContactMe.contactMeSend,
+    'contactButtonLight'
+  )
 })

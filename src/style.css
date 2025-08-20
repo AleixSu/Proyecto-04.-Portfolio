@@ -34,4 +34,13 @@ body {
 html {
   scroll-behavior: smooth;
 }
-/* #8df88d */
+
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+textarea:focus {
+  outline: none;
+  box-shadow: none;
+}

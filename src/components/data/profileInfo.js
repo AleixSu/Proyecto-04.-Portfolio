@@ -1,7 +1,6 @@
 export const profileInfo = {
   EN: {
-    profileIMG:
-      'https://image.tmdb.org/t/p/original/4rjnRCQ6bGFYdBb4UooOjsQy12c.jpg',
+    profileIMG: './src/components/data/images/imgProfile.jpg',
     mainUserInfo:
       "I'm Aleix Suero, a Full Stack development student passionate about creating elegant, intuitive, and effective experiences that blend design with functionality.",
     userAboutMe:

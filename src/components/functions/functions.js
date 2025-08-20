@@ -41,7 +41,7 @@ export const projectCardCreator = (elementoPadre) => {
             <div class="projectCard">
                 <video src="${project.projectVID}" muted loop playsinline></video>
                 <h4 class="projectTag">${project.projectName}</h4>
-                <a class="projectTag" href=${project.projectURL} > Go to GitHub Repository</a>
+                <a class="projectTag" href=${project.projectURL} target="_blank"> Go to GitHub Repository</a>
             </div>
         </div>   
     `

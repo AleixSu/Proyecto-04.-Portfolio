@@ -1,12 +1,14 @@
-import { projectCardCreator } from '../functions/functions'
+import { textAndTitles } from '../data/portfolioTextAndTitles'
+import { currentLanguage, projectCardCreator } from '../functions/functions'
 import './myWork.css'
 
 export const myWorkCreator = (elementoPadre) => {
+  const tAndTMyWork = textAndTitles[currentLanguage]
   const mainHTML = `
  
         <section id="myWorkContent" class="myWorkContent">
             <article class="myWorkDiv">
-               <h2 class="myWorkTitle">My work</h2>
+               <h2 class="myWorkTitle">${tAndTMyWork.myWorkH2}</h2>
                <div id="cardDiv">
                </div>
             </article>
@@ -37,8 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   })
   const cards = document.querySelectorAll('.projectCard')
-
-  console.log(cards)
 
   cards.forEach((card) => {
     const video = card.querySelector('video')
