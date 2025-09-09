@@ -15,9 +15,9 @@ export const projectArray = [
     projectURL: 'https://github.com/AleixSu/API-Pinterest-Exercise.git'
   },
   {
-    projectName: 'Test 1',
-    projectVID: 'undefined',
-    projectURL: 'Project number 1'
+    projectName: 'GameHub',
+    projectVID: './src/components/data/vids/project5Vid.mp4',
+    projectURL: 'https://github.com/AleixSu/Proyecto-05.GameHub.git'
   },
   {
     projectName: 'Test 2',
